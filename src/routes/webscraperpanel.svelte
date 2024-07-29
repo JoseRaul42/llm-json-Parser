@@ -49,9 +49,9 @@
     padding: 20px;
     font-style: italic;
     text-align: center;
-    border: 1px solid #1abc9c;
+    border: 1px solid #98b300;
     border-radius: 8px;
-    background-color: #1abc9c;
+    background-color:#001f3f;
   }
 
   textarea {
@@ -67,9 +67,9 @@
   button {
     padding: 10px 20px;
     margin-top: 10px;
-    border: none;
+    border:1px solid #98b300;
     border-radius: 4px;
-    background-color: #041221;
+    background-color:#0900b3;
     color: white;
     font-size: 1rem;
     cursor: pointer;
@@ -81,7 +81,7 @@
   }
 
   button:not(:disabled):hover {
-    background-color: #0056b3;
+    background-color: #0903b0;
   }
 
   .response {
@@ -100,7 +100,7 @@
     position: absolute;
     top: 10px;
     right: 10px;
-    background-color: #0056b3;
+    background-color: #0900b3;
     color: white;
     border: none;
     border-radius: 4px;
@@ -137,7 +137,7 @@
 </style>
 
 <div class="playground">
-  <h3>Enter Any URL you want to convert into LLM friendly JSON format</h3>
+  <h3>Enter any URL to convert into LLM-friendly JSON.</h3>
   <textarea bind:value={inputText} placeholder="https://example.com/"></textarea>
   <button on:click={interactWithLLM} disabled={$isLoading}>
     {#if $isLoading}

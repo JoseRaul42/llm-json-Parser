@@ -49,36 +49,37 @@
     justify-content: center;
     align-items: center;
     font-size: 2rem;
-    color: white;
+    font-style:italic;
+    color: rgb(201, 205, 7);
   }
 
   .panel:nth-child(1) {
-    background-color: #1abc9c;
+    background-color: #001f3f;
   }
 
   .panel:nth-child(2) {
-    background-color: #3498db;
+    background-color: #001f3f;
   }
 
   .panel:nth-child(3) {
-    background-color: #9b59b6;
+    background-color: #001f3f;
   }
 
   .panel:nth-child(4) {
-    background-color: #1abc9c;
+    background-color: #001f3f;
   }
 
   .panel:nth-child(5) {
-    background-color: #1abc9c;
+    background-color: #001f3f;
   }
 </style>
 
 <div class="container">
-  <div class="panel">Web Scraped JSON data is messy</div>
-  <div class="panel">Which is hard for LLMs to interpret accurately</div>
-  <div class="panel">Try out our free webscraper to parse out your JSON</div>
-  <div class="panel">Enter any link into our Play ground to test it out yourself!</div>
-  <div class="panel">  <Webscraperpanel />   </div>
+  <div class="panel" > <h4>Seamless JSON ingestion from any URL.</h4> </div>
+  <div class="panel"><h4>High readability format for better outcomes.</h4></div>
+  <div class="panel"><h4>Versatile format for various use cases.</h4></div>
+  <div class="panel"><h4>Optimized for RAG implementation performance.</h4></div>
+  <div class="panel"> <Webscraperpanel />   </div>
 </div>
 
 <slot />
